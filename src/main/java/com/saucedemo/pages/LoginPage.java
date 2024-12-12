@@ -37,9 +37,21 @@ public class LoginPage {
 		loginSubmitButton.click();
 	}
 	
-	public boolean errorLockedUserMessageIsDisplayed() {
+	public void loginProblemUser(String username, String password) {
+		inputUsername.sendKeys(username);
+		inputUserPassword.sendKeys(password);
+		loginSubmitButton.click();
+	}
+	
+	public boolean errorLoginUserMessageIsDisplayed() {
 		boolean errorLockedUserTextMessage = errorLockedUserMessage.isDisplayed();
 		return errorLockedUserTextMessage;
 	}
+	
+	public String errorLockedUserMessageText() {
+		String errorLockedUserTextMessage = errorLockedUserMessage.getText();
+		return errorLockedUserTextMessage;
+	}
+	
 	
 }

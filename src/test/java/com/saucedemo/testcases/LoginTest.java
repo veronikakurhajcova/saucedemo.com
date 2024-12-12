@@ -38,7 +38,14 @@ public class LoginTest extends Base {
 	public void loginLockedUser() {
 		loginPage.loginLockedUser(dataProp.getProperty("lockedUsername"), dataProp.getProperty("password"));
 		Assert.assertEquals(driver.getCurrentUrl(), configPropFile.getProperty("url"), "Url is not match");
-		Assert.assertTrue(loginPage.errorLockedUserMessageIsDisplayed(), "Error locked user message is not displayed");
+		Assert.assertTrue(loginPage.errorLoginUserMessageIsDisplayed(), "Error message is not displayed");
+		Assert.assertEquals(loginPage.errorLockedUserMessageText(), dataProp.getProperty("errorLockedUserMessage"));
+	}
+	
+	@Test(priority=3)
+	public void loginProblemUser() {
+		loginPage.loginProblemUser(dataProp.getProperty("problemUser"), dataProp.getProperty("password"));
+		Assert.assertEquals(driver.getCurrentUrl(), dataProp.getProperty("urlAfterLogin"), "Url after login problem user is not match");
 	}
 	
 	@AfterMethod
