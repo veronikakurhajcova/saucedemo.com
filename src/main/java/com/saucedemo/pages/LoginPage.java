@@ -25,19 +25,7 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void validLoginUser(String username, String password) {
-		inputUsername.sendKeys(username);
-		inputUserPassword.sendKeys(password);
-		loginSubmitButton.click();
-	}
-	
-	public void loginLockedUser(String username, String password) {
-		inputUsername.sendKeys(username);
-		inputUserPassword.sendKeys(password);
-		loginSubmitButton.click();
-	}
-	
-	public void loginProblemUser(String username, String password) {
+	public void loginUser(String username, String password) {
 		inputUsername.sendKeys(username);
 		inputUserPassword.sendKeys(password);
 		loginSubmitButton.click();
@@ -52,6 +40,7 @@ public class LoginPage {
 		String errorLockedUserTextMessage = errorLockedUserMessage.getText();
 		return errorLockedUserTextMessage;
 	}
+	
 	
 	
 }

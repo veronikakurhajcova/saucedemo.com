@@ -30,13 +30,13 @@ public class LoginTest extends Base {
 	
 	@Test(priority=1)
 	public void loginValidUser() {
-		loginPage.validLoginUser(dataProp.getProperty("username"), dataProp.getProperty("password"));
+		loginPage.loginUser(dataProp.getProperty("username"), dataProp.getProperty("password"));
 		Assert.assertEquals(driver.getCurrentUrl(), dataProp.getProperty("urlAfterLogin"), "Url is not match");
 	}
 	
 	@Test(priority=2)
 	public void loginLockedUser() {
-		loginPage.loginLockedUser(dataProp.getProperty("lockedUsername"), dataProp.getProperty("password"));
+		loginPage.loginUser(dataProp.getProperty("lockedUsername"), dataProp.getProperty("password"));
 		Assert.assertEquals(driver.getCurrentUrl(), configPropFile.getProperty("url"), "Url is not match");
 		Assert.assertTrue(loginPage.errorLoginUserMessageIsDisplayed(), "Error message is not displayed");
 		Assert.assertEquals(loginPage.errorLockedUserMessageText(), dataProp.getProperty("errorLockedUserMessage"));
@@ -44,15 +44,34 @@ public class LoginTest extends Base {
 	
 	@Test(priority=3)
 	public void loginProblemUser() {
-		loginPage.loginProblemUser(dataProp.getProperty("problemUser"), dataProp.getProperty("password"));
+		loginPage.loginUser(dataProp.getProperty("problemUser"), dataProp.getProperty("password"));
 		Assert.assertEquals(driver.getCurrentUrl(), dataProp.getProperty("urlAfterLogin"), "Url after login problem user is not match");
 	}
 	
+	@Test(priority=4)
+	public void loginPerformanceUser() {
+		loginPage.loginUser(dataProp.getProperty("performanceUser"), dataProp.getProperty("password"));
+		Assert.assertEquals(driver.getCurrentUrl(), dataProp.getProperty("urlAfterLogin"), "Url is not match");
+	}
+	
+	@Test(priority=5)
+	public void loginErrorUser() {
+		loginPage.loginUser(dataProp.getProperty("errorUser"), dataProp.getProperty("password"));
+		Assert.assertEquals(driver.getCurrentUrl(), dataProp.getProperty("urlAfterLogin"), "Url is not match");
+	}
+	
+	@Test(priority=6)
+	public void loginVisualUser() {
+		loginPage.loginUser(dataProp.getProperty("visualUser"), dataProp.getProperty("password"));
+		Assert.assertEquals(driver.getCurrentUrl(), dataProp.getProperty("urlAfterLogin"), "Url is not match");
+	}
+	
+	
 	@AfterMethod
 	public void tearDown() {
-//		if(driver!=null) {
-//			driver.quit();
-//		}
+		if(driver!=null) {
+			driver.quit();
+		}
 	}
 	
 

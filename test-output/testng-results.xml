@@ -1,25 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-12T22:58:37 SEČ" name="Default suite" finished-at="2024-12-12T22:58:39 SEČ" duration-ms="1909">
+  <suite started-at="2024-12-12T23:08:44 SEČ" name="Suite" finished-at="2024-12-12T23:08:59 SEČ" duration-ms="14209">
     <groups>
     </groups>
-    <test started-at="2024-12-12T22:58:37 SEČ" name="Default test" finished-at="2024-12-12T22:58:39 SEČ" duration-ms="1909">
+    <test started-at="2024-12-12T23:08:44 SEČ" name="Test" finished-at="2024-12-12T23:08:59 SEČ" duration-ms="14209">
       <class name="com.saucedemo.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T22:58:37 SEČ" name="setUp" finished-at="2024-12-12T22:58:39 SEČ" duration-ms="1590" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:44 SEČ" name="setUp" finished-at="2024-12-12T23:08:46 SEČ" duration-ms="1783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginProblemUser()[pri:3, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T22:58:39 SEČ" name="loginProblemUser" finished-at="2024-12-12T22:58:39 SEČ" duration-ms="287" status="PASS">
+        <test-method signature="loginValidUser()[pri:1, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:46 SEČ" name="loginValidUser" finished-at="2024-12-12T23:08:47 SEČ" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:47 SEČ" name="tearDown" finished-at="2024-12-12T23:08:47 SEČ" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:47 SEČ" name="setUp" finished-at="2024-12-12T23:08:48 SEČ" duration-ms="1031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLockedUser()[pri:2, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:48 SEČ" name="loginLockedUser" finished-at="2024-12-12T23:08:48 SEČ" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLockedUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:48 SEČ" name="tearDown" finished-at="2024-12-12T23:08:48 SEČ" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:48 SEČ" name="setUp" finished-at="2024-12-12T23:08:49 SEČ" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginProblemUser()[pri:3, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:49 SEČ" name="loginProblemUser" finished-at="2024-12-12T23:08:49 SEČ" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginProblemUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T22:58:39 SEČ" name="tearDown" finished-at="2024-12-12T22:58:39 SEČ" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:49 SEČ" name="tearDown" finished-at="2024-12-12T23:08:49 SEČ" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:49 SEČ" name="setUp" finished-at="2024-12-12T23:08:50 SEČ" duration-ms="1037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPerformanceUser()[pri:4, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:50 SEČ" name="loginPerformanceUser" finished-at="2024-12-12T23:08:56 SEČ" duration-ms="5266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPerformanceUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:56 SEČ" name="tearDown" finished-at="2024-12-12T23:08:56 SEČ" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:56 SEČ" name="setUp" finished-at="2024-12-12T23:08:57 SEČ" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginErrorUser()[pri:5, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:57 SEČ" name="loginErrorUser" finished-at="2024-12-12T23:08:57 SEČ" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:57 SEČ" name="tearDown" finished-at="2024-12-12T23:08:57 SEČ" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:57 SEČ" name="setUp" finished-at="2024-12-12T23:08:58 SEČ" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginVisualUser()[pri:6, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:58 SEČ" name="loginVisualUser" finished-at="2024-12-12T23:08:59 SEČ" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVisualUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@1f2586d6]" started-at="2024-12-12T23:08:59 SEČ" name="tearDown" finished-at="2024-12-12T23:08:59 SEČ" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.saucedemo.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
