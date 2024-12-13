@@ -18,7 +18,7 @@ public class LoginPage {
 	private WebElement loginSubmitButton;
 	
 	@FindBy(xpath="//h3[contains(@data-test,'error')]")
-	private WebElement errorLockedUserMessage;
+	private WebElement errorUserMessage;
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -32,15 +32,32 @@ public class LoginPage {
 	}
 	
 	public boolean errorLoginUserMessageIsDisplayed() {
-		boolean errorLockedUserTextMessage = errorLockedUserMessage.isDisplayed();
+		boolean errorLockedUserTextMessage = errorUserMessage.isDisplayed();
 		return errorLockedUserTextMessage;
 	}
 	
-	public String errorLockedUserMessageText() {
-		String errorLockedUserTextMessage = errorLockedUserMessage.getText();
+	public String errorUserMessageText() {
+		String errorLockedUserTextMessage = errorUserMessage.getText();
 		return errorLockedUserTextMessage;
 	}
 	
+	public void loginUserWithEmptyCredentials() {
+		inputUsername.sendKeys("");
+		inputUserPassword.sendKeys("");
+		loginSubmitButton.click();
+	}
+	
+	public void loginWithEmptyUsernameField(String password) {
+		inputUsername.sendKeys("");
+		inputUserPassword.sendKeys(password);
+		loginSubmitButton.click();
+	}
+	
+	public void loginWithEmptyPasswordField(String username) {
+		inputUsername.sendKeys(username);
+		inputUserPassword.sendKeys("");
+		loginSubmitButton.click();
+	}
 	
 	
 }

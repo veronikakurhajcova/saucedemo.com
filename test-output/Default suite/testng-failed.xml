@@ -6,7 +6,7 @@
       <class name="com.saucedemo.testcases.LoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginProblemUser"/>
+          <include name="loginWithEmptyPasswordField"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.saucedemo.testcases.LoginTest -->
