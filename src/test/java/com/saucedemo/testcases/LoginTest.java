@@ -95,7 +95,7 @@ public class LoginTest extends Base {
 	@Test(priority=11)
 	public void loginWithInvalidPassword() {
 		loginPage.loginUser(dataProp.getProperty("username"), dataProp.getProperty("invalidPassword"));
-		Assert.assertTrue(loginPage.errorLoginUserMessageIsDisplayed(), "Error message for invalid username is not displayed");
+		Assert.assertTrue(loginPage.errorLoginUserMessageIsDisplayed(), "Error message for invalid password is not displayed");
 		Assert.assertEquals(loginPage.errorUserMessageText(), dataProp.getProperty("errorLoginInvalidUsernameAndPasswordMessage"));
 	}
 	

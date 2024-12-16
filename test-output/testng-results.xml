@@ -1,145 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-13T11:13:41 SEČ" name="Default suite" finished-at="2024-12-13T11:14:02 SEČ" duration-ms="21177">
+  <suite started-at="2024-12-17T00:12:31 SEČ" name="Default suite" finished-at="2024-12-17T00:12:52 SEČ" duration-ms="20784">
     <groups>
     </groups>
-    <test started-at="2024-12-13T11:13:41 SEČ" name="Default test" finished-at="2024-12-13T11:14:02 SEČ" duration-ms="21177">
-      <class name="com.saucedemo.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:41 SEČ" name="setUp" finished-at="2024-12-13T11:13:42 SEČ" duration-ms="1605" status="PASS">
+    <test started-at="2024-12-17T00:12:31 SEČ" name="Default test" finished-at="2024-12-17T00:12:52 SEČ" duration-ms="20784">
+      <class name="com.saucedemo.testcases.LoginWithExcelTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:32 SEČ" name="setUp" finished-at="2024-12-17T00:12:33 SEČ" duration-ms="1588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginValidUser()[pri:1, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:42 SEČ" name="loginValidUser" finished-at="2024-12-13T11:13:43 SEČ" duration-ms="282" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:33 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:34 SEČ" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginValidUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:43 SEČ" name="tearDown" finished-at="2024-12-13T11:13:43 SEČ" duration-ms="115" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:34 SEČ" name="tearDown" finished-at="2024-12-17T00:12:34 SEČ" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:43 SEČ" name="setUp" finished-at="2024-12-13T11:13:44 SEČ" duration-ms="1226" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:34 SEČ" name="setUp" finished-at="2024-12-17T00:12:35 SEČ" duration-ms="1035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginLockedUser()[pri:2, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:44 SEČ" name="loginLockedUser" finished-at="2024-12-13T11:13:44 SEČ" duration-ms="279" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:35 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:35 SEČ" duration-ms="347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginLockedUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:44 SEČ" name="tearDown" finished-at="2024-12-13T11:13:44 SEČ" duration-ms="127" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:35 SEČ" name="tearDown" finished-at="2024-12-17T00:12:35 SEČ" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:44 SEČ" name="setUp" finished-at="2024-12-13T11:13:45 SEČ" duration-ms="959" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:35 SEČ" name="setUp" finished-at="2024-12-17T00:12:36 SEČ" duration-ms="1026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginProblemUser()[pri:3, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:45 SEČ" name="loginProblemUser" finished-at="2024-12-13T11:13:46 SEČ" duration-ms="255" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:36 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:37 SEČ" duration-ms="272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginProblemUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:46 SEČ" name="tearDown" finished-at="2024-12-13T11:13:46 SEČ" duration-ms="106" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:37 SEČ" name="tearDown" finished-at="2024-12-17T00:12:37 SEČ" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:46 SEČ" name="setUp" finished-at="2024-12-13T11:13:47 SEČ" duration-ms="1038" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:37 SEČ" name="setUp" finished-at="2024-12-17T00:12:38 SEČ" duration-ms="1018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPerformanceUser()[pri:4, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:47 SEČ" name="loginPerformanceUser" finished-at="2024-12-13T11:13:52 SEČ" duration-ms="5277" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:38 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:43 SEČ" duration-ms="5303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPerformanceUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:52 SEČ" name="tearDown" finished-at="2024-12-13T11:13:52 SEČ" duration-ms="106" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:43 SEČ" name="tearDown" finished-at="2024-12-17T00:12:43 SEČ" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:52 SEČ" name="setUp" finished-at="2024-12-13T11:13:53 SEČ" duration-ms="979" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:43 SEČ" name="setUp" finished-at="2024-12-17T00:12:44 SEČ" duration-ms="1053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginErrorUser()[pri:5, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:53 SEČ" name="loginErrorUser" finished-at="2024-12-13T11:13:53 SEČ" duration-ms="273" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:44 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:45 SEČ" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[error_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginErrorUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:53 SEČ" name="tearDown" finished-at="2024-12-13T11:13:53 SEČ" duration-ms="119" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:45 SEČ" name="tearDown" finished-at="2024-12-17T00:12:45 SEČ" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:53 SEČ" name="setUp" finished-at="2024-12-13T11:13:55 SEČ" duration-ms="1232" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:45 SEČ" name="setUp" finished-at="2024-12-17T00:12:46 SEČ" duration-ms="1099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginVisualUser()[pri:6, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:55 SEČ" name="loginVisualUser" finished-at="2024-12-13T11:13:55 SEČ" duration-ms="244" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:46 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:46 SEČ" duration-ms="284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginVisualUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:55 SEČ" name="tearDown" finished-at="2024-12-13T11:13:55 SEČ" duration-ms="105" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:46 SEČ" name="tearDown" finished-at="2024-12-17T00:12:46 SEČ" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:55 SEČ" name="setUp" finished-at="2024-12-13T11:13:56 SEČ" duration-ms="1040" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:46 SEČ" name="setUp" finished-at="2024-12-17T00:12:47 SEČ" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithEmptyCredentials()[pri:7, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:56 SEČ" name="loginWithEmptyCredentials" finished-at="2024-12-13T11:13:56 SEČ" duration-ms="189" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:47 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:48 SEČ" duration-ms="304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standarduser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithEmptyCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:56 SEČ" name="tearDown" finished-at="2024-12-13T11:13:56 SEČ" duration-ms="110" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:48 SEČ" name="tearDown" finished-at="2024-12-17T00:12:48 SEČ" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:56 SEČ" name="setUp" finished-at="2024-12-13T11:13:57 SEČ" duration-ms="1012" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:48 SEČ" name="setUp" finished-at="2024-12-17T00:12:49 SEČ" duration-ms="1060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithEmptyUsernameField()[pri:8, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:57 SEČ" name="loginWithEmptyUsernameField" finished-at="2024-12-13T11:13:58 SEČ" duration-ms="240" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:49 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:49 SEČ" duration-ms="269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secret]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithEmptyUsernameField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:58 SEČ" name="tearDown" finished-at="2024-12-13T11:13:58 SEČ" duration-ms="115" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:49 SEČ" name="tearDown" finished-at="2024-12-17T00:12:49 SEČ" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:58 SEČ" name="setUp" finished-at="2024-12-13T11:13:59 SEČ" duration-ms="1012" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:49 SEČ" name="setUp" finished-at="2024-12-17T00:12:50 SEČ" duration-ms="1011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithEmptyPasswordField()[pri:9, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:59 SEČ" name="loginWithEmptyPasswordField" finished-at="2024-12-13T11:13:59 SEČ" duration-ms="225" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:50 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:50 SEČ" duration-ms="304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Password is required]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithEmptyPasswordField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:59 SEČ" name="tearDown" finished-at="2024-12-13T11:13:59 SEČ" duration-ms="111" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:50 SEČ" name="tearDown" finished-at="2024-12-17T00:12:51 SEČ" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:13:59 SEČ" name="setUp" finished-at="2024-12-13T11:14:00 SEČ" duration-ms="1007" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:51 SEČ" name="setUp" finished-at="2024-12-17T00:12:52 SEČ" duration-ms="1045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidUsername()[pri:10, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:14:00 SEČ" name="loginWithInvalidUsername" finished-at="2024-12-13T11:14:00 SEČ" duration-ms="255" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:52 SEČ" name="verifyLogin" data-provider="loginData" finished-at="2024-12-17T00:12:52 SEČ" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username is required]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:14:00 SEČ" name="tearDown" finished-at="2024-12-13T11:14:01 SEČ" duration-ms="112" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginWithExcelTest@6a78afa0]" started-at="2024-12-17T00:12:52 SEČ" name="tearDown" finished-at="2024-12-17T00:12:52 SEČ" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:14:01 SEČ" name="setUp" finished-at="2024-12-13T11:14:01 SEČ" duration-ms="974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidPassword()[pri:11, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:14:01 SEČ" name="loginWithInvalidPassword" finished-at="2024-12-13T11:14:02 SEČ" duration-ms="259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.LoginTest@6989da5e]" started-at="2024-12-13T11:14:02 SEČ" name="tearDown" finished-at="2024-12-13T11:14:02 SEČ" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.saucedemo.testcases.LoginTest -->
+      </class> <!-- com.saucedemo.testcases.LoginWithExcelTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
