@@ -29,7 +29,6 @@ public class LoginWithExcelTest extends Base {
 
 	@Test(dataProvider = "loginData", dataProviderClass = Utils.class)
 	public void verifyLogin(String username, String password, String expectedErrorMessage) {
-	
 		    if ((username != null && !username.isEmpty()) && (password != null && !password.isEmpty())) {
 		       
 		        loginPage.loginUser(username, password);

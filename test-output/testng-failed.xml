@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.saucedemo.testcases.LoginWithExcelTest">
+      <class name="com.saucedemo.testcases.ShoppingAndOrderPlacementTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyLogin" invocation-numbers="8 9"/>
+          <include name="tearDown"/>
+          <include name="verifySuccessfulPurchaseFlow"/>
         </methods>
-      </class> <!-- com.saucedemo.testcases.LoginWithExcelTest -->
+      </class> <!-- com.saucedemo.testcases.ShoppingAndOrderPlacementTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

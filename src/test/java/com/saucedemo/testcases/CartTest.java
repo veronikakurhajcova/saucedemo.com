@@ -41,7 +41,7 @@ public class CartTest extends Base {
 	
 	@Test(priority=2)
 	public void removeProductFromCart() {
-		inventoryPage.addAllProductsToCart();
+		inventoryPage.addProductToCart();
 		inventoryPage.clickOnShoppingCart();
 		cartPage.removeCartItems();
 		Assert.assertTrue(cartPage.itemsInCartAreNotDisplayed(), "Item is displayed in Cart");

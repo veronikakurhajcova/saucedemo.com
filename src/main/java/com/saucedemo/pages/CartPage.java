@@ -15,6 +15,9 @@ public class CartPage {
 	
 	@FindBy(xpath="//button[contains(@class,'cart_button')]")
 	private List<WebElement> removeCartItemsButton; 
+	
+	@FindBy(id="checkout")
+	private WebElement checkoutButton;
 
 	public CartPage(WebDriver driver) {
 		this.driver = driver;
@@ -46,6 +49,10 @@ public class CartPage {
 		for (WebElement itemInCart : itemsInCart) {
 			itemInCart.click();
 		}
+	}
+	
+	public void clickOnCheckoutButton() {
+		checkoutButton.click();
 	}
 
 }
