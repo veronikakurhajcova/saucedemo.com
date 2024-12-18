@@ -4,6 +4,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -12,6 +13,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.saucedemo.utilities.ExtentReport;
+import com.saucedemo.utilities.Utils;
 
 
 public class TestListener implements ITestListener {
@@ -32,6 +34,18 @@ public class TestListener implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		extentTest.log(Status.FAIL, result.getName() + " is failed");
+		
+		WebDriver driver = null;
+		try {
+			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+			e.printStackTrace();
+		}
+		
+		String destinationScreenshotsPath = Utils.captureScreenshot(driver, result.getName());
+		extentTest.addScreenCaptureFromPath(destinationScreenshotsPath);
+		extentTest.log(Status.INFO, result.getThrowable());
+		extentTest.log(Status.FAIL, result.getName() + " got failed");
 		
 	}
 
