@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="1" name="Test" parallel="false">
+<listeners>
+	<listener class-name="com.saucedemo.listeners.TestListener" />
+</listeners>
+  <test thread-count="1" name="Saucedemo.com Test" parallel="false">
     <classes>
       <class name="com.saucedemo.testcases.LoginWithExcelTest"/>
+      <class name="com.saucedemo.testcases.LoginTest"/>
       <class name="com.saucedemo.testcases.CartTest"/>
+      <class name="com.saucedemo.testcases.ShoppingAndOrderPlacementTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
